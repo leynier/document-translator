@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "document-translator"
+version = "0.1.0"
+description = "Tool to translate big documents using LLMs."
+authors = ["Leynier Gutiérrez González <leynier41@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.31.0"
+pydantic = { version = "^2.7.3", extras = ["all"] }
+typer = { version = "^0.12.3", extras = ["all"] }
+pydantic-settings = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
