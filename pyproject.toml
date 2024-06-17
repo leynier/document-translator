@@ -5,7 +5,10 @@ description = "Tool to translate big documents using LLMs."
 authors = ["Leynier Gutiérrez González <leynier41@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-package-mode = false
+package-mode = true
+
+[tool.poetry.scripts]
+document-translator = "document_translator.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.11"
