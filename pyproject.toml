@@ -13,6 +13,7 @@ openai = "^1.31.0"
 pydantic = { version = "^2.7.3", extras = ["all"] }
 typer = { version = "^0.12.3", extras = ["all"] }
 pydantic-settings = "^2.3.0"
+python-docx = "^1.1.2"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.4.7"
