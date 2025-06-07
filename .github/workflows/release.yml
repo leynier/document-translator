@@ -128,5 +128,5 @@ jobs:
         if: steps.tag-check.outputs.exists == 'false'
         run: |
           echo "🚀 Release v${{ steps.package-version.outputs.version }} completed successfully!"
-          echo "📦 Published to PyPI: https://pypi.org/project/mcp-sys-bridge/"
+          echo "📦 Published to PyPI: https://pypi.org/project/document-translator/"
           echo "🏷️ GitHub release: https://github.com/${{ github.repository }}/releases/tag/v${{ steps.package-version.outputs.version }}"
