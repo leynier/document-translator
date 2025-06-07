@@ -69,7 +69,7 @@ def main(
         text = para.text
         if text.strip():
             texts.append(text)
-    step = len(texts) // 100
+    step = max(1, len(texts) // 100)
     print(f"Total texts: {len(texts)}")
     texts = [
         text
