@@ -1,8 +1,6 @@
-%:
-	typer main.py $@
+install:
+	uv sync --all-groups --all-extras
 
-run:
-	typer main.py run
-
-help:
-	typer main.py run --help
+tests: install
+	uv run ruff check .
+	uv run ruff format --check .

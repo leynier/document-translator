@@ -34,3 +34,13 @@ document-translator word [OPTIONS] COMMAND [ARGS]...
 * `-t, --language-target TEXT`: Target language. For example: 'english'  [required]
 * `--translator [openai]`: Translator  [default: openai]
 * `--help`: Show this message and exit.
+
+## Development
+
+Install dependencies with [uv](https://github.com/astral-sh/uv) and run the tool:
+
+```bash
+uv lock
+uv sync --all-groups --all-extras
+uv run document-translator --help
+```
