@@ -2,12 +2,12 @@
 name = "document-translator"
 version = "0.1.0"
 description = "Tool to translate big documents using LLMs."
-readme = "README.md"
+readme = "readme.md"
 authors = [
     { name = "Leynier Gutiérrez González", email = "leynier41@gmail.com" },
 ]
 license = "MIT"
-license-files = ["LICENSE"]
+license-files = ["license"]
 keywords = ["document", "translation", "llm"]
 classifiers = [
     "Development Status :: 4 - Beta",
