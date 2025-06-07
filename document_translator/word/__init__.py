@@ -88,7 +88,6 @@ def main(
             text = para.runs[0].text
             if text.strip():
                 translated_text = texts[index]
-                new_para = translated_text
                 index += 1
             else:
                 translated_text = text
