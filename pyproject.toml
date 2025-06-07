@@ -1,26 +1,48 @@
-[tool.poetry]
+[project]
 name = "document-translator"
 version = "0.1.0"
 description = "Tool to translate big documents using LLMs."
-authors = ["Leynier Gutiérrez González <leynier41@gmail.com>"]
-license = "MIT"
 readme = "README.md"
-package-mode = true
+authors = [
+    { name = "Leynier Gutiérrez González", email = "leynier41@gmail.com" },
+]
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["document", "translation", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.11"
 
-[tool.poetry.scripts]
+dependencies = [
+    "openai>=1.31.0",
+    "pydantic[all]>=2.7.3",
+    "typer[all]>=0.12.5",
+    "pydantic-settings>=2.3.0",
+    "python-docx>=1.1.2",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.4.7"]
+
+[project.scripts]
 document-translator = "document_translator.main:app"
 
-[tool.poetry.dependencies]
-python = "^3.11"
-openai = "^1.31.0"
-pydantic = { version = "^2.7.3", extras = ["all"] }
-typer = { version = "^0.12.3", extras = ["all"] }
-pydantic-settings = "^2.3.0"
-python-docx = "^1.1.2"
-
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.4.7"
+[project.urls]
+homepage = "https://github.com/leynier/document-translator"
+documentation = "https://github.com/leynier/document-translator"
+repository = "https://github.com/leynier/document-translator"
+issues = "https://github.com/leynier/document-translator/issues"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["document_translator"]
