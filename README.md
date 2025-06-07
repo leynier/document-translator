@@ -35,6 +35,17 @@ document-translator word [OPTIONS] COMMAND [ARGS]...
 * `--translator [openai]`: Translator  [default: openai]
 * `--help`: Show this message and exit.
 
+## Configuration
+
+The tool reads the OpenAI API key from the environment variable
+`OPENAI_API_KEY`. You can create a `.env` file at the project root by
+copying the provided example:
+
+```bash
+cp .env.example .env
+# then edit .env and replace the placeholder with your API key
+```
+
 ## Development
 
 Install dependencies with [uv](https://github.com/astral-sh/uv) and run the tool:
