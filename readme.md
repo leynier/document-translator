@@ -44,3 +44,7 @@ uv lock
 uv sync --all-groups --all-extras
 uv run document-translator --help
 ```
+
+## Environment variables
+
+Copy `.env.example` to `.env` and set `OPENAI_API_KEY` with your OpenAI API key.
