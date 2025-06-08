@@ -1,6 +1,6 @@
 [project]
 name = "doculingo"
-version = "0.1.0"
+version = "0.1.1"
 description = "Tool to translate big documents using LLMs."
 readme = "readme.md"
 authors = [
