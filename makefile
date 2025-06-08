@@ -4,3 +4,4 @@ install:
 tests: install
 	uv run ruff check .
 	uv run ruff format --check .
+	uv run pytest -q

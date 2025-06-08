@@ -29,7 +29,10 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["ruff>=0.4.7"]
+dev = [
+    "ruff>=0.4.7",
+    "pytest>=8.2.1",
+]
 
 [project.scripts]
 document-translator = "document_translator.main:app"
