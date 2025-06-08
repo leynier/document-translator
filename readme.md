@@ -9,7 +9,7 @@
 [![Watchers](https://img.shields.io/github/watchers/leynier/document-translator?style=flat&logo=github)](https://github.com/leynier/document-translator)
 [![Contributors](https://img.shields.io/github/contributors/leynier/document-translator)](https://github.com/leynier/document-translator/graphs/contributors)
 
-A **command-line tool** to translate large Word documents using language models. It preserves the file formatting and simplifies migrating documentation to other languages.
+A **command-line tool** to translate large documents using language models. It preserves the file formatting and simplifies migrating documentation to other languages.
 
 ---
 
