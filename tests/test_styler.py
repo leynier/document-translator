@@ -6,7 +6,7 @@ from docx.shared import Inches, Pt, RGBColor
 
 os.environ.setdefault("OPENAI_API_KEY", "test")
 
-from document_translator.word.styler import copy_paragraph_style, copy_run_style
+from doculingo.word.styler import copy_paragraph_style, copy_run_style
 
 
 def test_copy_run_style() -> None:
