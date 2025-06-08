@@ -1,13 +1,13 @@
-# Document Translator
+# DocuLingo
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/pypi/v/document-translator?color=%2334D058&label=Version)](https://pypi.org/project/document-translator)
-[![Last commit](https://img.shields.io/github/last-commit/leynier/document-translator.svg?style=flat)](https://github.com/leynier/document-translator/commits)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/leynier/document-translator)](https://github.com/leynier/document-translator/commits)
-[![Stars](https://img.shields.io/github/stars/leynier/document-translator?style=flat&logo=github)](https://github.com/leynier/document-translator/stargazers)
-[![Forks](https://img.shields.io/github/forks/leynier/document-translator?style=flat&logo=github)](https://github.com/leynier/document-translator/network/members)
-[![Watchers](https://img.shields.io/github/watchers/leynier/document-translator?style=flat&logo=github)](https://github.com/leynier/document-translator)
-[![Contributors](https://img.shields.io/github/contributors/leynier/document-translator)](https://github.com/leynier/document-translator/graphs/contributors)
+[![Version](https://img.shields.io/pypi/v/doculingo?color=%2334D058&label=Version)](https://pypi.org/project/doculingo)
+[![Last commit](https://img.shields.io/github/last-commit/leynier/doculingo.svg?style=flat)](https://github.com/leynier/doculingo/commits)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/leynier/doculingo)](https://github.com/leynier/doculingo/commits)
+[![Stars](https://img.shields.io/github/stars/leynier/doculingo?style=flat&logo=github)](https://github.com/leynier/doculingo/stargazers)
+[![Forks](https://img.shields.io/github/forks/leynier/doculingo?style=flat&logo=github)](https://github.com/leynier/doculingo/network/members)
+[![Watchers](https://img.shields.io/github/watchers/leynier/doculingo?style=flat&logo=github)](https://github.com/leynier/doculingo)
+[![Contributors](https://img.shields.io/github/contributors/leynier/doculingo)](https://github.com/leynier/doculingo/graphs/contributors)
 
 A **command-line tool** to translate large Word documents using language models. It preserves the file formatting and simplifies migrating documentation to other languages.
 
@@ -28,7 +28,7 @@ A **command-line tool** to translate large Word documents using language models.
 
 ## Overview
 
-`document-translator` helps you translate documents while preserving their formatting. It currently works with Word files and aims to support additional formats in the future, making it ideal for projects that require multiple language versions without losing the original layout.
+`doculingo` helps you translate documents while preserving their formatting. It currently works with Word files and aims to support additional formats in the future, making it ideal for projects that require multiple language versions without losing the original layout.
 
 ---
 
@@ -47,13 +47,13 @@ A **command-line tool** to translate large Word documents using language models.
 Run instantly with [uv](https://github.com/astral-sh/uv) without installing:
 
 ```bash
-uvx document-translator --help
+uvx doculingo --help
 ```
 
 Or install from PyPI:
 
 ```bash
-pip install document-translator
+pip install doculingo
 ```
 
 ---
@@ -63,7 +63,7 @@ pip install document-translator
 Translate a Word document from Spanish to English:
 
 ```bash
-document-translator word \
+doculingo word \
   --input file.docx \
   --output translated.docx \
   --language-source spanish \
@@ -77,7 +77,7 @@ document-translator word \
 Get the full list of options with:
 
 ```bash
-document-translator --help
+doculingo --help
 ```
 
 The main subcommand is `word`, designed for `.docx` files.
@@ -91,7 +91,7 @@ Install the dependencies and run the tool locally:
 ```bash
 uv lock
 uv sync --all-groups --all-extras
-uv run document-translator --help
+uv run doculingo --help
 ```
 
 ---

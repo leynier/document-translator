@@ -6,7 +6,7 @@ from pytest import MonkeyPatch
 
 os.environ.setdefault("OPENAI_API_KEY", "test")
 
-from document_translator import word
+from doculingo import word
 
 
 def test_segmentation(monkeypatch: MonkeyPatch, tmp_path: Path) -> None:
